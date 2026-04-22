@@ -1,6 +1,9 @@
 /* AutoMind AI — shared styles */
 html { scroll-behavior: smooth; }
-body { overflow-anchor: none; }
+body { overflow-anchor: none; cursor: default; }
+* { user-select: none; }
+input, textarea { user-select: text; }
+a, button, [role="button"], .btn, nav a, .nav a { cursor: pointer; }
 :root {
   --bg: #0A0A0A;
   --surface: #111827;

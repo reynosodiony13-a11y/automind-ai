@@ -12,7 +12,10 @@
 <style>
 /* AutoMind AI — shared styles */
 html { scroll-behavior: smooth; }
-body { overflow-anchor: none; }
+body { overflow-anchor: none; cursor: default; }
+* { user-select: none; }
+input, textarea { user-select: text; }
+a, button, [role="button"], .btn, nav a, .nav a { cursor: pointer; }
 :root {
   --bg: #0A0A0A;
   --surface: #111827;
@@ -205,7 +208,7 @@ footer { border-top: 1px solid var(--border); padding: 60px 0 40px; }
       <a href="#results">Results</a>
       <a href="#contact">Contact</a>
     </div>
-    <a href="#contact" class="btn btn-primary" data-cc-id="cc-2" style="" contenteditable="true">Book Appointment&nbsp;<span class="arrow">→</span></a>
+    <a href="#contact" class="btn btn-primary">Book Appointment&nbsp;<span class="arrow">→</span></a>
   </div>
 </nav>
 
