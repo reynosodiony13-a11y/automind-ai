@@ -1,4 +1,6 @@
 /* AutoMind AI — shared styles */
+html { scroll-behavior: smooth; }
+body { overflow-anchor: none; }
 :root {
   --bg: #0A0A0A;
   --surface: #111827;
