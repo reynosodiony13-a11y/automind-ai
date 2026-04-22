@@ -195,7 +195,7 @@ footer { border-top: 1px solid var(--border); padding: 60px 0 40px; }
 @keyframes fadeRise { to { opacity: 1; transform: translateY(0); } }
 </style>
 </head>
-<body data-cc-id="cc-1" style="cursor: crosshair;">
+<body>
 
 <!-- NAV -->
 <nav class="nav">
@@ -660,6 +660,11 @@ footer { border-top: 1px solid var(--border); padding: 60px 0 40px; }
   .chat-send:disabled { opacity: 0.35; cursor: not-allowed; }
   .chat-send svg { width: 18px; height: 18px; stroke: #fff; fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
   .chat-foot { padding: 0 18px 12px; font-family: var(--font-mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); text-align: center; }
+
+  /* Cursor overrides — must come last to beat any prior rule */
+  *, *::before, *::after { cursor: default !important; }
+  a, button, [role="button"], .btn, .cta, nav a, input[type="submit"], label { cursor: pointer !important; }
+  input, textarea { cursor: text !important; }
 </style>
 
 <button class="chat-fab" id="chatFab" aria-label="Open chat">
