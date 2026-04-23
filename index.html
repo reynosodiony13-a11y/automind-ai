@@ -3,7 +3,12 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<script>history.scrollRestoration = 'manual'; window.scrollTo(0, 0);</script>
+<script>
+  history.scrollRestoration = 'manual';
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
+  window.scrollTo(0, 0);
+  window.addEventListener('load', function () { window.scrollTo(0, 0); });
+</script>
 <title>AutoMind AI — AI systems for businesses that want to grow</title>
 <meta name="description" content="AutoMind AI builds done-for-you artificial intelligence systems for New York City businesses — AI chat, voice agents, and lead follow-up automation.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
