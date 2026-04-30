@@ -139,6 +139,7 @@ section:first-of-type { border-top: none; }
 .price-card .setup span { font-size: 14px; color: var(--text-muted); font-weight: 400; letter-spacing: 0; margin-left: 6px; font-family: var(--font-body); }
 .price-card .monthly { font-family: var(--font-body); font-size: 14px; color: var(--text-muted); }
 .price-card .monthly strong { color: var(--text); font-weight: 500; }
+.price-card .free-month { display: inline-block; margin-top: 10px; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #22d377; background: rgba(34,211,119,0.10); border: 1px solid rgba(34,211,119,0.35); padding: 6px 10px; border-radius: 999px; }
 .price-card .tagline { font-size: 15px; line-height: 1.5; color: var(--text-muted); }
 .price-card ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px; }
 .price-card li { display: flex; gap: 12px; font-size: 14px; line-height: 1.45; color: var(--text); }
@@ -242,12 +243,13 @@ footer { border-top: 1px solid var(--border); padding: 60px 0 40px; }
     <div>
      <div class="setup">$1,750<span>one-time setup</span></div>
      <div class="monthly" style="margin-top:8px;">Then <strong>$250 / month</strong></div>
+     <div class="free-month">First month free billing starts on month 2</div>
     </div>
     <div class="tagline">The foundation. Launch your AI presence and start converting visitors into customers automatically.</div>
     <div class="divider"></div>
     <ul>
      <li>Custom AI-powered website, fully branded to your business</li>
-     <li>Regular website updates included keep your content, branding, and offers fresh without extra fees</li>
+     <li>Unlimited website updates anytime, no extra cost change copy, swap photos, refresh promos, or roll out seasonal themes (Christmas, Halloween, summer sale, anything you want)</li>
      <li>AI chatbot embedded on your site answers, qualifies, books 24/7</li>
      <li>Mobile-optimized, fast-loading, and built to convert</li>
      <li>Ongoing maintenance included in your monthly</li>
@@ -262,6 +264,7 @@ footer { border-top: 1px solid var(--border); padding: 60px 0 40px; }
     <div>
      <div class="setup">$3,000<span>one-time setup</span></div>
      <div class="monthly" style="margin-top:8px;">Then <strong>$500 / month</strong></div>
+     <div class="free-month">First month free billing starts on month 2</div>
     </div>
     <div class="tagline">Everything in Starter plus AI that answers your phones, captures every lead, and keeps you informed automatically.</div>
     <div class="divider"></div>
@@ -429,10 +432,12 @@ footer { border-top: 1px solid var(--border); padding: 60px 0 40px; }
  const SYSTEM = `You are the AutoMind AI website assistant. AutoMind AI is a done-for-you AI automation agency based in New York City that builds custom AI systems for businesses.
 
 Packages:
-- Starter: $1,750 setup + $250/mo AI-powered website with built-in chatbot, regular website updates included, ongoing maintenance, dedicated support.
+- Starter: $1,750 setup + $250/mo AI-powered website with built-in chatbot, unlimited website updates, ongoing maintenance, dedicated support.
 - Premium (Most Popular): $3,000 setup + $500/mo Everything in Starter + AI voice agent for after-hours calls, automatic call transcripts emailed to the team, voice lead qualification, email follow-up automation, monthly performance report.
 
-A la carte (per month): Website $200, AI Chatbot $50, Voice Agent $150, Email Follow-up Automation $75, Call Transcripts & Lead Capture $50, Monthly Performance Report $50. All of these are bundled into the Starter and Premium plans.
+First month is free billing starts on month 2 for both plans.
+
+Unlimited website updates: clients can request changes whenever they want at no extra cost copy, photos, promos, and seasonal themes (Christmas, Halloween, summer sale, anything they want).
 
 Setup typically takes 7 business days. Month-to-month after an initial 3-month commitment. Regular updates and maintenance included.
 
